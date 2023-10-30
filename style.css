@@ -1,0 +1,196 @@
+*{
+    margin:0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+html,body{
+    height: 100%;
+    width: 100%;
+    /* background-color: green; */
+   
+}
+
+.wrapper{
+    height: 100%;
+    width: 100%;
+    position: relative;
+    /* background: #000; */
+}
+nav{
+    padding: 0 3vw;
+    height: 60px;
+    width: 100%;
+    /* background-color: red; */
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    background-color: #845B31 ;
+}
+nav>h2{
+    font-size:3vw;
+    font-family: 'Chakra Petch', sans-serif;
+    
+}
+.nav-links>a{
+margin-left: 2vw;
+text-decoration: none;
+color: #000;
+font-size:1.5vw;
+font-family: 'Chakra Petch', sans-serif;
+
+}
+.nav-links>i{
+    font-weight: 900;
+    font-size:6vw;
+    display:none;
+}
+.menu{
+    display: none;
+}
+.content{
+    width: 100%;
+    /* background-color: bisque; */
+    height:calc(100% - 60px);
+    display:flex;
+}
+.left{
+    width: 50%;
+    height: 100%;
+   
+    padding: 5vw 3vw;
+}
+.left>h1{
+    font-size: 5.5vw;
+    line-height: 5.5vw;
+    font-family: 'Chakra Petch', sans-serif;
+}
+.left h1 span{
+    color: #D9A17A;
+}
+.left p{
+    font-size: 1.35vw;
+    line-height: 1.5vw;
+    color: #666;
+    font-weight: 600;
+    width: 80%;
+    margin: 2vw 0;
+    font-family: 'Chakra Petch', sans-serif;
+}
+
+button{
+    font-size: 1.25vw;
+    padding: 0.8vw;
+    font-weight: 500;
+    font-family: 'Chakra Petch', sans-serif;
+    border: none;
+    background-color:#D9A17A;
+    border-radius: 5px;
+    color: #fff;
+    
+}
+
+.right{
+    width: 50%;
+    height: 100%;
+    
+}
+.right>img{
+   height: 90%;
+   width: 90%;
+   background-size: cover;
+   margin: 2vw 0 ;
+}
+/*media query*/
+
+@media only screen and (max-width:600px){
+    nav{
+        background-color:#D9A17A;
+        color: #fff;
+        font-family: 'Chakra Petch', sans-serif;
+       
+    }
+    nav>h2{
+        font-size: 6vw;
+    }
+    .nav-links>i{
+        display: block;
+    }
+    .nav-links>a{
+        display: none;
+    }
+   
+    .menu{
+        z-index: 3;
+        position: absolute;
+        right: 0;
+        display:flex;
+        flex-direction: column;
+        width:80%;
+        height: 100vh;
+        align-items:end;
+        padding: 3vw 3vw;
+        background-color:#D9A17A;
+        /* border: 1px solid red; */
+       
+    }
+    
+
+    .menu a {
+        text-decoration: none;
+        color: black;
+        font-size: 7vw;
+        margin: 2vw 0;
+       
+
+    }
+    .content{
+        display: flex;
+        flex-direction: column;
+        padding: 0 2vw;
+    }
+    .left{
+        width: 100%;
+    }
+    .left>h1{
+       font-size: 13vw;
+       line-height:13vw;
+       
+       margin: 5vw 0 ;
+       text-align:left;
+       /* border: 1px solid red; */
+    }
+    .left h1 span{
+        color: #D9A17A;
+    }
+    .left>p{
+        font-size: 3.5vw;
+        line-height: 4.5vw;
+        font-weight: 300;
+        text-align: left;
+        width: 98%;
+        margin: 5vw 0 ;
+        color: #666;
+        /* border: 1px solid red; */
+
+    }
+    button{
+        padding: 3vw 5vw;
+        font-size: 3vw;
+        background-color:#D9A17A;
+    }
+    .right{
+        /* border: 1px solid red; */
+        height: 100%;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+
+    }
+    .right>img{
+        height: 95%;
+        width: 80%;
+        display: flex;
+       /* border: 1px solid red */
+    }
+}
